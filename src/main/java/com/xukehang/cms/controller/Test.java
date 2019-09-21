@@ -11,5 +11,5 @@ public class Test {
 	 System.out.println(	s.matches("^/admin/\\w*"));
 		
 	}
-
+ 
 }

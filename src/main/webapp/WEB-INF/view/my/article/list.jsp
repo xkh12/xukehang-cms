@@ -19,7 +19,7 @@ function toUpdate(id) {
 }
 </script>
 </head>
-<body>
+<body> 
 
 	<c:forEach items="${myarticles.list}" var="article">
 		<dl>

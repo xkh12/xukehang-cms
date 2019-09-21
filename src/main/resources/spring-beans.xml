@@ -10,7 +10,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
 
-
+ 
 	<!-- 1、注解扫描器    todo -->
 	<context:component-scan base-package="com.xukehang.cms" >
 		<!-- 排除要要扫描的controller -->

@@ -27,7 +27,7 @@
 <mvc:interceptors>
   <mvc:interceptor>
    <!--  拦截的规则 -->
-  <mvc:mapping path="/**"/>
+  <mvc:mapping path="/**"/> 
      <!-- 静态资源不拦截 -->
    <mvc:exclude-mapping path="/resource/**"/>
    <mvc:exclude-mapping path="/user/check"/>

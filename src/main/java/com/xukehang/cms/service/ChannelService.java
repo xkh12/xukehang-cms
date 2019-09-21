@@ -12,3 +12,4 @@ import com.xukehang.cms.entity.Channel;
 public interface ChannelService {
 	List<Channel> getChannels();
 }
+ 

@@ -6,7 +6,7 @@
 	
 	<insert id="add" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
 		insert into cms_user
-		    (username,password,nickname,birthday,gender,locked,create_time,update_time,url,score,role) 
+ 		    (username,password,nickname,birthday,gender,locked,create_time,update_time,url,score,role) 
 		    values 
 		 (#{username},#{password},#{nickname},#{birthday},#{gender},#{locked},#{createTime},#{updateTime},#{url},#{score},#{role})
 	</insert>

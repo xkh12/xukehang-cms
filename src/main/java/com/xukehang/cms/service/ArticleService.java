@@ -21,7 +21,7 @@ public interface ArticleService {
 	 * @return
 	 */
 	PageInfo<Article> list(Integer pageNum, Integer channelId,Integer cid);
-	
+	 
 //	PageInfo<Article> listByChannel(Integer pageNum,Integer cid);
 	
 	Article findById(Integer ArticleId);

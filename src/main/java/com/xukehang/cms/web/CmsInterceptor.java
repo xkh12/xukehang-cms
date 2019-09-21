@@ -30,7 +30,7 @@ public class CmsInterceptor implements HandlerInterceptor {
 			request.getRequestDispatcher("/user/login").forward(request, response);
 			return false;
 		}
-		
+		 
 		return true;
 	}
 

@@ -34,7 +34,7 @@
 				href="javascript:void(0)" data="/toCollectList" class="list-group-item">个人收藏</a></li>
 			<li class="list-group-item  text-center"><a class="channel"
 				href="javascript:void(0)" data="/blog/toBlog" class="list-group-item">写博客</a></li>
-		
+		 
 		<li class="list-group-item  text-center"><a class="channel"
 				href="javascript:void(0)" data="/blog/toList" class="list-group-item">博客管理</a></li>
 		

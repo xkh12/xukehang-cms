@@ -39,7 +39,7 @@ public class Article4Vote {
 	}
 	public void setContent(String content) {
 		this.content = content;
-	}
+	} 
 	public LinkedHashMap<Character, String> getVoteMap() {
 		return voteMap;
 	}

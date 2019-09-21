@@ -9,7 +9,7 @@
 	<li class="nav-item"><a class="nav-link"  href="javascript:void(0)" data="/article/checkList">
 			<i class="fas fa-fw fa-folder"></i> <span>文章管理</span>
 	</a></li>
-
+ 
 	<li class="nav-item"><a class="nav-link"  href="javascript:void(0)" data="/user/list">
 			<i class="fas fa-fw fa-chart-area"></i> <span>用户管理</span>
 	</a></li>

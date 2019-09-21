@@ -23,7 +23,7 @@ import com.xukehang.cms.service.ChannelService;
 public class IndexController {
 	
 	private Logger log = Logger.getLogger(IndexController.class);
-	
+	 
 	@Autowired
 	ChannelService cService;
 	

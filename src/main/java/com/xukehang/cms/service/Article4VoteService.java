@@ -21,7 +21,7 @@ public interface Article4VoteService {
 	int vote(Integer userId, Integer articleId,Character option);
 	
 	List<VoteStatic> getVoteStatics(Integer articleId);
-	
+	 
 	
 	
 

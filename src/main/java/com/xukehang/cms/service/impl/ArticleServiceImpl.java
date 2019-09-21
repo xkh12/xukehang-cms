@@ -23,7 +23,7 @@ public class ArticleServiceImpl implements ArticleService{
 		// TODO Auto-generated method stub
 		return articleMapper.add(article);
 	}
-
+ 
 	@Override
 	public PageInfo<Article> list(Integer pageNum,Integer channelId, Integer cid) {
 		// TODO Auto-generated method stub

@@ -21,7 +21,7 @@
 					<h5 class="mt-0 mb-1"><small> ${a.username } &nbsp;  <fmt:formatDate value="${a.created }" pattern="yyyy-MM-dd"/> </small></h5>
 					
 				</div>
-				
+			 	
 				
 				</li>
 				<hr>

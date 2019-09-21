@@ -33,7 +33,7 @@ public class VoteController {
 		List<Article4Vote> list = avService.list();
 		request.setAttribute("list", list);
 		return "my/vote/list";
-		
+	 	
 	}
 	
 	@GetMapping("push")

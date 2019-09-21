@@ -14,5 +14,5 @@ public interface ChannelMapper {
 	@Select("select * from cms_channel order by id")
 	@ResultType(Channel.class)
 	List<Channel> getChannels();
-	
+	 
 }

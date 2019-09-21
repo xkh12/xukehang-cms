@@ -23,5 +23,5 @@ public class Md5Utils {
 	public static String md5(String pwd) {
 		//对密码进行加密
 		return DigestUtils.md5Hex(pwd + saltString);
-	}
+	} 
 }

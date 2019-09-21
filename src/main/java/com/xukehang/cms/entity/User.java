@@ -156,7 +156,7 @@ public class User implements Serializable {
 			if (other.id != null)
 				return false;
 		} else if (!id.equals(other.id))
-			return false;
+	 		return false;
 		if (username == null) {
 			if (other.username != null)
 				return false;

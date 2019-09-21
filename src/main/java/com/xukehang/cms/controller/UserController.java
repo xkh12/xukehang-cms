@@ -158,7 +158,7 @@ public class UserController {
 	@ResponseBody
 	public boolean update(HttpServletRequest request,Integer id,Integer locked) {
 		return userService.updateLocked(id,locked)>0;
-		
+	 	
 	
 	}
 	

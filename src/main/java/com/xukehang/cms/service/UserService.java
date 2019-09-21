@@ -49,7 +49,7 @@ public interface UserService {
 	 * @return
 	 */
 	User findById(Integer id);
-	
+	 
 	/**
 	 * 根据用户名模糊查询
 	 * @param pageNumber

@@ -148,7 +148,7 @@ public class ArticleController {
 		List<Category> cats = catService.getCategoryByChId(channelId);
 		return cats;
 	}
-
+ 
 	/**
 	 * 
 	 * @param request

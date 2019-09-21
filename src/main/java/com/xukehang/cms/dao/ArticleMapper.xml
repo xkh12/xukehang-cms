@@ -78,7 +78,7 @@
 			  group by a.id 
 			  order by  a.hot desc,  a.created desc
 	</select>
-	
+	 
 	
 	<select id="lastArticles" resultType="article">
 		select a.id,a.content,a.title,a.picture,a.channel_id AS channelId,a.category_id categoryId,a.user_id AS userId,

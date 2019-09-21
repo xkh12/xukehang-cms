@@ -15,7 +15,7 @@ String htmlData = request.getParameter("content1") != null ? request.getParamete
 				cssPath : '/resource/kindeditor/plugins/code/prettify.css',
 				uploadJson : '/resource/kindeditor/jsp/upload_json.jsp',
 				fileManagerJson : '/resource/kindeditor/jsp/file_manager_json.jsp',
-				allowFileManager : true,
+	 			allowFileManager : true,
 				afterCreate : function() {
 					var self = this;
 					K.ctrl(document, 13, function() {

@@ -18,7 +18,7 @@ public interface ArticleMapper {
 	Article findById(Integer articleId);
 	
 	int add(Article article);
-	
+	 
 	
 	List<Article> listByUser(@Param("userId") Integer userId);
 

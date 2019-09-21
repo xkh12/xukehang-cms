@@ -20,7 +20,7 @@ public class Article4VoteServiceImpl implements Article4VoteService {
 	
 	@Autowired
 	Article4VoteMapper avMapper;
-
+ 
 	@Override
 	public int publish(Article4Vote av) {
 		// TODO Auto-generated method stub

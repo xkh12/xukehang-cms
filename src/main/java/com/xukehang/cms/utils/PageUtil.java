@@ -25,7 +25,7 @@ public class PageUtil {
           int beginPage = 1;
           //中间页为 pageSize/2
           int midPage = pageSize / 2;
-          if (page> midPage)
+           if (page> midPage)
           {
               beginPage = page- midPage;
           }

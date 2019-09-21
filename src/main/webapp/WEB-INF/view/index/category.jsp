@@ -28,7 +28,7 @@
 			href="javascript:void(0)"
 			data="/article/listbyCatId?catId=${catygory.id}">${catygory.name }</a></li>
 	</c:forEach>
-
+ 
 	<!-- 所有栏目下的文章 -->
 	<div id="content-wrapper">
 

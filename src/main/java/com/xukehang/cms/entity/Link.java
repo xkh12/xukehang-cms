@@ -16,7 +16,7 @@ public class Link {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+ 
 	public Integer getId() {
 		return id;
 	}

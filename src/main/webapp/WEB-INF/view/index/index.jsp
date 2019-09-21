@@ -118,7 +118,7 @@
 					<div class="card-body">
 						<ol>
 							<c:forEach items="${lasts}" var="article">
-								<li class="text-truncate"><a href="javascript:toDetail(${article.id})">${article.title}</a></li>
+								<li class="text-truncate"><a href="/article/getDetail?aId=${article.id}">${article.title}</a></li>
 							</c:forEach>
 						</ol>
 					</div>

@@ -32,7 +32,7 @@ public class CategoryController {
 	@RequestMapping("getCategories")
 	public String getCategoryByChId(HttpServletRequest request, Integer cid){
 		
-		
+	 	
 		List<Category> categoris = categoryService.getCategoryByChId(cid);
 		System.out.println("categoris is" + categoris);
 		

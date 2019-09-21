@@ -18,7 +18,7 @@ import com.xukehang.cms.entity.VoteStatic;
  */
 @Mapper
 public interface Article4VoteMapper {
-
+ 
 	/**
 	 * 发布一个投票
 	 * @param av

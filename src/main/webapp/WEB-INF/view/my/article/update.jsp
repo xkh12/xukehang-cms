@@ -157,7 +157,7 @@ $(function(){
 						 for(var cati in catlist){
 						  	 if(catlist[cati].id==${article.categoryId}){
 								 $("#category").append("<option selected value='"+catlist[cati].id+"'>"+catlist[cati].name+"</option>")
-						 	 }else{
+	 					 	 }else{
 						 		$("#category").append("<option value='"+catlist[cati].id+"'>"+catlist[cati].name+"</option>")
 						 	 }
 							 //处理回显

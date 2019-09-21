@@ -48,7 +48,7 @@ public interface UserMapper {
 	@ResultType(User.class)
 	List<User> queryList(@Param("name") String name);
 
-
+ 
 	/**
 	 * 修改用户的锁定状态
 	 * @param userId

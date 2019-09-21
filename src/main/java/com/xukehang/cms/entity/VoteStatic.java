@@ -32,7 +32,7 @@ public class VoteStatic {
 	}
 	public void setVoteNum(Integer voteNum) {
 		this.voteNum = voteNum;
-	}
+	} 
 	public String getOptionTitle() {
 		return optionTitle;
 	}

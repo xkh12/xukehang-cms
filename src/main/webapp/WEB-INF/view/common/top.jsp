@@ -37,7 +37,7 @@
 		    <a class="dropdown-item" href="/user/logout">退出</a>
 		  </div>
 		</div>
-   	 </li>
+   	 </li> 
     </c:when>
     <c:otherwise>
       <%-- 未登录显示登录注册链接 --%>
