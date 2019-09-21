@@ -17,6 +17,7 @@
 <body>  
 <div class="container">
 
+
 		<form action="" id="form">
 			<input type="hidden"  name="articleId" value="${voteArticle.id}">
 			<dl>
@@ -40,7 +41,11 @@
 		</form>
 		<script type="text/javascript">
 			function vote(){
-				
+				var option=$("[name=option]:checked");
+				if (option.length<=0) {
+					alert("抱歉您还没有选择")
+					return ;
+				}
 				var data = $("#form").serialize();
 				$.post("/vote/vote",data,function(obj){
 					if(obj){

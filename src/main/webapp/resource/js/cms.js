@@ -32,6 +32,8 @@ $(function () {
            });  
        
        $('.nav-link').click(function () {
+    	   
+    	  
        	
     	   //获取当前默认高亮的属性
          var li = $('.nav-link.active');
@@ -46,12 +48,23 @@ $(function () {
        
        //当点击左侧菜单时  加载url
       $('.nav-link').click(function (e) {
+    	 
         	  //获取点击的的url
             var url = $(this).attr('data');
         	 // console.log(url);
+           
            //在中间区域显示地址的内容
            $('#content-wrapper').load(url);
         });
+      
+      // 点击全部
+      $('.mlink').click(function (e) {
+    	  //获取点击的的url
+        var url = $(this).attr('data');
+       //在中间区域显示地址的内容
+        $('#center').load(url);
+    });
+      
       
      //个人主页当点击左侧菜单时-->
       $('.channel').click(function (e) {

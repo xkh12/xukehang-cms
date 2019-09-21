@@ -2,8 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.zhangxutao</groupId>
-	<artifactId>my-cms</artifactId>
+	<groupId>com.xukehang</groupId>
+	<artifactId>xukehang-cms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -220,8 +220,12 @@
 
 		<!-- 依赖公共工具包 -->
 		<!-- 工具包 -->
-		<!-- <dependency> <groupId>com.bawei</groupId> <artifactId>lisi_cmmon</artifactId> 
-			<version>0.0.1-SNAPSHOT</version> </dependency> -->
+	<dependency>
+		<groupId>com.xukehang</groupId>
+	<artifactId>xukehang-common</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+  </dependency>
+  
 	</dependencies>
 
 
@@ -267,7 +271,7 @@
 				<version>9.3.7.v20160115</version>
 				<configuration>
 					<httpConnector>
-						<port>80</port>
+						<port>8081</port>
 						<host>localhost</host>
 					</httpConnector>
 					<contextHandlers>

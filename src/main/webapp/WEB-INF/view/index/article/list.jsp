@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <ul class="nav">
 
   
@@ -11,13 +12,13 @@
 		<hr>
 	   <!-- 栏目下所有文章 -->
 		<c:forEach items="${pageInfo.list }" var="a">
-			<li class="media"><img  width="120px" height="120px" class="mr-3" src="/pic/${a.picture }"
+			<li class="media"><img  width="120px" height="80px" class="mr-3" src="/pic/${a.picture }"
 				alt="no pic">
 				<div class="media-body">
 					<h5 class="mt-0 mb-1"><small><a href="javascript:myopen(${a.id })"> ${a.title }</a></small></h5>
 					<br>
 					<br>
-					<h5 class="mt-0 mb-1"><small> ${a.username } &nbsp;  ${a.created }</small></h5>
+					<h5 class="mt-0 mb-1"><small> ${a.username } &nbsp;  <fmt:formatDate value="${a.created }" pattern="yyyy-MM-dd"/> </small></h5>
 					
 				</div>
 				

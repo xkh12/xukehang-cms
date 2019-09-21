@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
   <!-- 扫描器   todo  -->
   
-  <context:component-scan base-package="com.zhangxutao.controller"></context:component-scan>
+  <context:component-scan base-package="com.xukehang.cms.controller"></context:component-scan>
 <!-- 视图解析图 -->
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
   <!-- 配置前缀 --> 
@@ -33,8 +33,14 @@
    <mvc:exclude-mapping path="/user/check"/>
    <mvc:exclude-mapping path="/user/login"/>
    <mvc:exclude-mapping path="/user/register"/>
+   <mvc:exclude-mapping path="/index/**"/>
+   <mvc:exclude-mapping path="/index"/>
+   <mvc:exclude-mapping path="/index"/>
+   <mvc:exclude-mapping path="/getCategories"/>
+   <mvc:exclude-mapping path="/article/**"/>
+   <mvc:exclude-mapping path="/"/>
    <!-- 拦截器处理类 -->
-   <bean class="com.zhangxutao.web.CmsInterceptor"></bean>
+   <bean class="com.xukehang.cms.web.CmsInterceptor"></bean>
   </mvc:interceptor>
   
 </mvc:interceptors> 

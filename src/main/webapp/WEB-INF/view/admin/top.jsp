@@ -36,7 +36,7 @@
             <a class="dropdown-item" href="#">返回网站</a>
             <a class="dropdown-item" href="#">修改密码</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">退出</a>
+            <a class="dropdown-item" href="/user/logout" >退出</a>
           </div>
         </li>
       </ul>

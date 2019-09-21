@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -51,7 +52,7 @@
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img class="d-block w-100" src="/pic/1.jpg" alt="First slide">
+							<img class="d-block w-100" src="/pic/3f293225-1764-4cd0-ada1-0b55bba7b5c8.jpg" alt="First slide">
 						</div>
 						<div class="carousel-item">
 							<img class="d-block w-100" src="/pic/2.jpg" alt="Second slide">
@@ -71,9 +72,9 @@
 				<br />
 				<div id="hot">
 					<!-- 新闻热点 -->
-					<c:forEach items="${hotList}" var="c">
+					<c:forEach items="${pageInfo.list}" var="c">
 						<div class="media">
-							<img class="align-self-start mr-3" src="/pic/${c.picture }"
+							<img  width="120"  height="80" class="align-self-start mr-3" src="/pic/${c.picture }"
 								alt="no pic">
 							<div class="media-body">
 								<h5 class="mt-0">
@@ -82,7 +83,7 @@
 								<p class="blog_item_footer">
 									<span class="glyphicon glyphicon-user" title="作者"></span>作者：${c.username}&nbsp;&nbsp;
 									&nbsp; <span class="glyphicon glyphicon-time" title="发布时间"></span>发布：&nbsp;
-									${c.created }&nbsp;&nbsp;&nbsp;&nbsp;
+									<fmt:formatDate value="${c.created }" pattern="yyyy-MM-dd"/>&nbsp;&nbsp;&nbsp;&nbsp;
 								</p>
 							</div>
 						
@@ -116,8 +117,8 @@
 					<div class="card-header">最新文章</div>
 					<div class="card-body">
 						<ol>
-							<c:forEach items="${lastArticles}" var="article">
-								<li class="text-truncate"><a href="/article/${article.id}">${article.title}</a></li>
+							<c:forEach items="${lasts}" var="article">
+								<li class="text-truncate"><a href="javascript:toDetail(${article.id})">${article.title}</a></li>
 							</c:forEach>
 						</ol>
 					</div>
@@ -125,7 +126,7 @@
 			   <div class="card">
 			   <div class="card-header">友情链接</div>
 			      <ol>
-			    <c:forEach items="${linkList}" var="l">
+			    <c:forEach items="${links}" var="l">
 			      <li class="text-truncate text-center"><a href="${l.url }" target="_blank">${l.text}</a></li>
 			    
 			    </c:forEach>
@@ -157,6 +158,7 @@
 			$('.channel').click(function(e) {
 				//获取点击的的url
 				var url = $(this).attr('data');
+				
 				/* // alert("点击了 " +url ); */
 				// console.log(url);
 				//隐藏轮播

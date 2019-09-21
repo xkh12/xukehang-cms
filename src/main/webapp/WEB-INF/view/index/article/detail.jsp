@@ -14,11 +14,11 @@
 </head>
 <body>  
 <div class="container">
-
+		
 		<dl>
+		   <dt><a href="javascript:window.close()">关闭窗口</a></dt>
 			<dt>${article.title }</dt>
 				<hr>
-			
 			<dd>${article.content }</dd>
 		</dl>
 	
